@@ -9,5 +9,6 @@ The respiratory for BCB 546X Unix_Assignment
 5. 
 
 # Commandlines
-awk '{print $1 "\t" $3 "\t" $4}' snp_position.txt > File01.txt
-grep "Sample_ID" fang_et_al_genotypes.txt > File02.txt
+- awk '{print $1 "\t" $3 "\t" $4}' snp_position.txt > File01.txt
+- grep "Sample_ID" fang_et_al_genotypes.txt > File02.txt
+- cut -d "\t" -c 3-
