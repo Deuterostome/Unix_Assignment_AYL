@@ -12,7 +12,7 @@ The respiratory for BCB 546X Unix_Assignment
 - awk '{print $1 "\t" $3 "\t" $4}' snp_position.txt > File01.txt
 - grep "Sample_ID" fang_et_al_genotypes.txt > File02.txt
 - cut -d $'\t' -f 1,3- fang_et_al_genotypes.txt > File03.txt
-- awk '{
+- awk -F $'\t' '{
        for (f = 1; f <= NF; f++) { a[NR, f] = $f }
      }
      NF > nf { nf = NF }
@@ -23,3 +23,9 @@ The respiratory for BCB 546X Unix_Assignment
            }
        }
     }' File03.txt > File04.txt
+- grep "ZMMIL\|ZMMLR\|ZMMMR" fang_et_al_genotypes.txt >> File02.txt
+
+
+- cat File02.txt > Group01.txt | grep "ZMMIL\|ZMMLR\|ZMMMR" fang_et_al_genotypes.txt >> Group01.txt
+- cut -d $'\t' -f 1,3- Group01.txt > Group01-02.txt
+- join 
