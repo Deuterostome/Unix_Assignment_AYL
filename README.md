@@ -40,7 +40,7 @@ The respiratory for BCB 546X Unix_Assignment
        }
     }' Group01_2.txt > Group01_3.txt
 
-** sed -i '/Group/d' Group01_3.txt **
+**sed -i '/Group/d' Group01_3.txt**
 join -t $'\t' File01.txt Group01_3.txt > Group01_4.txt
 
 - sed -e "${grep 'Sample_ID'}r Group01_3.txt" File01
