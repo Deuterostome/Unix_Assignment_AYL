@@ -36,6 +36,7 @@ The respiratory for BCB 546X Unix_Assignment
 - sort -t $'\t' -k1 Group01_3.txt > Group01_4.txt **#sort before join**
 - join -t $'\t' File01_1.txt Group01_4.txt > Group01_5.txt **#join together**
 - mkdir ZM_Ascending/ ZM_Descending/ Position_multip_unknown/
+
 **# Seperate chomoromse and Sorting by chomoroms position**
 - cat Group01_5.txt | awk '$2 == "1"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_1.txt
 - cat Group01_5.txt | awk '$2 == "2"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_2.txt
