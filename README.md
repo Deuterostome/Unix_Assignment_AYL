@@ -75,7 +75,7 @@ cat Group01_5.txt | awk '$2 == "10"' | sort -rn -k3,3 > ./ZM_Descending/chromoso
 cat Group01_5.txt | awk '$3 == "unknown"' > ./Position_multip_unknown/position_unknown.txt
 cat Group01_5.txt | awk '$2 == "multiple"||$3 == "multiple"' > ./Position_multip_unknown/nultiple_position.txt
 
-
+cat File07.txt >> ./ZM_Ascending/Chr01_Ascend.txt | cat ./ZM_Ascending/chromosome_1.txt >> ./ZM_Ascending/Chr01_Ascend.txt
 
 
 
