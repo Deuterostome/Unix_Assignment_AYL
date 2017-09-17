@@ -39,15 +39,15 @@ The respiratory for BCB 546X Unix_Assignment
            }
        }
     }' Group01_2.txt > Group01_3.txt
-awk '{print $1 "\t" $3 "\t" $4}' snp_position.txt | grep 'SNP_ID' > File05.txt
-grep 'Sample_ID' Group01_3.txt | cut -d $'\t' -f 2- > File06.txt
-paste File05.txt File06.txt > File07.txt
+- awk '{print $1 "\t" $3 "\t" $4}' snp_position.txt | grep 'SNP_ID' > File05.txt
+- grep 'Sample_ID' Group01_3.txt | cut -d $'\t' -f 2- > File06.txt
+- paste File05.txt File06.txt > File07.txt
 
-sed -i '/Group/d;/Sample_ID/d' Group01_3.txt
-sed -i '/SNP_ID/d' File01.txt
-sort -t $'\t' -k1 File01.txt > File01_1.txt
-sort -t $'\t' -k1 Group01_3.txt > Group01_4.txt
-join -t $'\t' File01_1.txt Group01_4.txt > Group01_5.txt
+- sed -i '/Group/d;/Sample_ID/d' Group01_3.txt
+- sed -i '/SNP_ID/d' File01.txt
+- sort -t $'\t' -k1 File01.txt > File01_1.txt
+- sort -t $'\t' -k1 Group01_3.txt > Group01_4.txt
+- join -t $'\t' File01_1.txt Group01_4.txt > Group01_5.txt
 **cat Group01_5.txt >> File07.txt**
 
 
