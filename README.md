@@ -50,32 +50,31 @@ The respiratory for BCB 546X Unix_Assignment
 - join -t $'\t' File01_1.txt Group01_4.txt > Group01_5.txt
 - mkdir ZM/
 - mkdir Position_multip_unknown
-cat Group01_5.txt | awk '$2 == "1"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_1.txt
-cat Group01_5.txt | awk '$2 == "2"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_2.txt
-cat Group01_5.txt | awk '$2 == "3"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_3.txt
-cat Group01_5.txt | awk '$2 == "4"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_4.txt
-cat Group01_5.txt | awk '$2 == "5"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_5.txt
-cat Group01_5.txt | awk '$2 == "6"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_6.txt
-cat Group01_5.txt | awk '$2 == "7"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_7.txt
-cat Group01_5.txt | awk '$2 == "8"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_8.txt
-cat Group01_5.txt | awk '$2 == "9"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_9.txt
-cat Group01_5.txt | awk '$2 == "10"' | sort -t $'\t' -k 3n > ./ZM_Ascending/chromosome_10.txt
+cat Group01_5.txt | awk '$2 == "1"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_1.txt
+cat Group01_5.txt | awk '$2 == "2"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_2.txt
+cat Group01_5.txt | awk '$2 == "3"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_3.txt
+cat Group01_5.txt | awk '$2 == "4"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_4.txt
+cat Group01_5.txt | awk '$2 == "5"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_5.txt
+cat Group01_5.txt | awk '$2 == "6"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_6.txt
+cat Group01_5.txt | awk '$2 == "7"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_7.txt
+cat Group01_5.txt | awk '$2 == "8"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_8.txt
+cat Group01_5.txt | awk '$2 == "9"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_9.txt
+cat Group01_5.txt | awk '$2 == "10"' | sort -n -k3,3 > ./ZM_Ascending/chromosome_10.txt
 
-cat Group01_5.txt | awk '$2 == "1"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_1.txt
-cat Group01_5.txt | awk '$2 == "2"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_2.txt
-cat Group01_5.txt | awk '$2 == "3"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_3.txt
-cat Group01_5.txt | awk '$2 == "4"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_4.txt
-cat Group01_5.txt | awk '$2 == "5"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_5.txt
-cat Group01_5.txt | awk '$2 == "6"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_6.txt
-cat Group01_5.txt | awk '$2 == "7"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_7.txt
-cat Group01_5.txt | awk '$2 == "8"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_8.txt
-cat Group01_5.txt | awk '$2 == "9"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_9.txt
-cat Group01_5.txt | awk '$2 == "10"' | sort -t $'\t' -k 3n -r > ./ZM_Descending/chromosome_10.txt
+cat Group01_5.txt | awk '$2 == "1"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_1.txt
+cat Group01_5.txt | awk '$2 == "2"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_2.txt
+cat Group01_5.txt | awk '$2 == "3"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_3.txt
+cat Group01_5.txt | awk '$2 == "4"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_4.txt
+cat Group01_5.txt | awk '$2 == "5"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_5.txt
+cat Group01_5.txt | awk '$2 == "6"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_6.txt
+cat Group01_5.txt | awk '$2 == "7"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_7.txt
+cat Group01_5.txt | awk '$2 == "8"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_8.txt
+cat Group01_5.txt | awk '$2 == "9"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_9.txt
+cat Group01_5.txt | awk '$2 == "10"' | sort -rn -k3,3 > ./ZM_Descending/chromosome_10.txt
 
 cat Group01_5.txt | awk '$3 == "unknown"' > ./Position_multip_unknown/position_unknown.txt
-cat Group01_5.txt | awk '$2 == "multiple"' > ./Position_multip_unknown/nultiple_position.txt
-sort -t $'\t' -k 3n ./ZM_Ascending/chromosome_*.txt
-sort -t $'\t' -k 3n -r ./ZM_Ascending/chromosome_*.txt
+cat Group01_5.txt | awk '$2 == "multiple"||$3 == "multiple"' > ./Position_multip_unknown/nultiple_position.txt
+
 
 
 
