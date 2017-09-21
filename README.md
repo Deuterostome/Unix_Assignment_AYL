@@ -66,7 +66,8 @@ The respiratory for BCB 546X Unix_Assignment
 - cat File07.txt >> ./ZM_Descending/Chr08_Descend.txt | cat ./ZM_Descending/chromosome_8.txt >> ./ZM_Descending/Chr08_Descend.txt
 - cat File07.txt >> ./ZM_Descending/Chr09_Descend.txt | cat ./ZM_Descending/chromosome_9.txt >> ./ZM_Descending/Chr09_Descend.txt
 - cat File07.txt >> ./ZM_Descending/Chr10_Descend.txt | cat ./ZM_Descending/chromosome_10.txt >> ./ZM_Descending/Chr10_Descend.txt
-- sed 's/?\/?/-\/-/g' ./ZM_Descending/Chr*
+- sed 's/?\/?/-\/-/g' ./ZM_Descending/Chr01_testing.txt
+- sed -i 's/?\/?/-\/-/g' ./ZM_Descending/Chr*
 
 - cat File07.txt >> ./Position_multip_unknown/Position_Unknown.txt | cat ./Position_multip_unknown/position_unknown.txt >> ./Position_multip_unknown/Position_Unknown.txt
 - cat File07.txt >> ./Position_multip_unknown/Multiple_Position.txt | cat ./Position_multip_unknown/multiple_position.txt >> ./Position_multip_unknown/Multiple_Position.txt
@@ -136,7 +137,7 @@ The respiratory for BCB 546X Unix_Assignment
 - cat File07.txt >> ./Teo_Descending/Chr08_Descend.txt | cat ./Teo_Descending/chromosome_8.txt >> ./Teo_Descending/Chr08_Descend.txt
 - cat File07.txt >> ./Teo_Descending/Chr09_Descend.txt | cat ./Teo_Descending/chromosome_9.txt >> ./Teo_Descending/Chr09_Descend.txt
 - cat File07.txt >> ./Teo_Descending/Chr10_Descend.txt | cat ./Teo_Descending/chromosome_10.txt >> ./Teo_Descending/Chr10_Descend.txt
-- sed 's/?\/?/-\/-/g' ./Teo_Descending/Chr*
+- sed -i 's/?\/?/-\/-/g' ./Teo_Descending/Chr*
 
 - cat File07.txt >> ./Teo_Position_multip_unknown/Position_Unknown.txt | cat ./Teo_Position_multip_unknown/position_unknown.txt >> ./Teo_Position_multip_unknown/Position_Unknown.txt
 - cat File07.txt >> ./Teo_Position_multip_unknown/Multiple_Position.txt | cat ./Teo_Position_multip_unknown/multiple_position.txt >> ./Teo_Position_multip_unknown/Multiple_Position.txt
